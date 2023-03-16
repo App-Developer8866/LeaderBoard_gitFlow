@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 80%;
+  padding: 40px;
+  margin: auto;
+}
+
+header nav {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 50%;
+  margin: auto;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60%;
+}
+
+.borad-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+button {
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.borad-header button {
+  background-color: rgb(173, 63, 100);
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info {
+  font-weight: bold;
+  padding: 10px 5px;
+}
+
+.info:nth-child(even) {
+  background: rgb(194, 192, 192);
+}
+
+.info:nth-child(odd) {
+  background: rgb(248, 246, 246);
+}
+
+.input input {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.submit {
+  margin-left: 50%;
+  background-color: rgb(73, 73, 143);
+}
+
+button:hover {
+  padding: 10px 15px;
+}
