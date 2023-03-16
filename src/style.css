@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(202, 186, 193);
+}
+
 header {
   width: 80%;
   padding: 40px;
   margin: auto;
+  text-align: center;
 }
 
 header nav {
@@ -54,6 +59,7 @@ button {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  border: 1px solid black;
 }
 
 .score {
@@ -70,7 +76,7 @@ button {
 
 .info {
   font-weight: bold;
-  padding: 10px 5px;
+  padding: 5px;
 }
 
 .info:nth-child(even) {
