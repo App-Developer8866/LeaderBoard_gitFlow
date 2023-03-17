@@ -7,9 +7,11 @@ const display = (data) => {
   });
 };
 
-fetch(allVar.BASE_URL)
+const getData = () => {
+  fetch(allVar.BASE_URL)
   .then((res) => res.json())
   .then((data) => display(data?.result));
+};
 
 allVar.Form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -27,9 +29,13 @@ allVar.Form.addEventListener('submit', async (e) => {
   };
 
   await fetch(allVar.BASE_URL, postRequest).then((res) => res.json())
-    .then(() => window.location.reload());
+    .then(() => getData());
+ allVar.User.value = "";
+ allVar.Score.value = "";
 });
 
 allVar.Refresh.addEventListener('click', () => {
-  window.location.reload();
+  getData();
 });
+
+getData();
