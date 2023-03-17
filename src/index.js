@@ -9,8 +9,8 @@ const display = (data) => {
 
 const getData = () => {
   fetch(allVar.BASE_URL)
-  .then((res) => res.json())
-  .then((data) => display(data?.result));
+    .then((res) => res.json())
+    .then((data) => display(data?.result));
 };
 
 allVar.Form.addEventListener('submit', async (e) => {
@@ -30,8 +30,8 @@ allVar.Form.addEventListener('submit', async (e) => {
 
   await fetch(allVar.BASE_URL, postRequest).then((res) => res.json())
     .then(() => getData());
- allVar.User.value = "";
- allVar.Score.value = "";
+  allVar.User.value = '';
+  allVar.Score.value = '';
 });
 
 allVar.Refresh.addEventListener('click', () => {
